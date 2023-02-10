@@ -79,6 +79,7 @@
 - [Balsamiq wireframes tutorial](https://www.youtube.com/watch?v=9Pv002d0Kls&list=PLVlyYfbClWxQDCGC-A1FkbGyIxtuIN5IM)
 - [Lots of technology short videos](https://www.youtube.com/@Fireship)
 - [Being a responsible developer](https://www.youtube.com/watch?v=7EmboKQH8lM)
+- [Data modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170)
 
 ## Project Boards
 - [Trello](https://trello.com/)
