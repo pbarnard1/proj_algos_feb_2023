@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,java,python,django,flask,react,node,macos,linux,windows
 
 # Added by me
-
+leetcode_solutions.js
 
 ### Django ###
 *.log
