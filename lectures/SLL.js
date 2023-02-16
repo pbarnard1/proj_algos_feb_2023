@@ -15,8 +15,8 @@ class SLL { // Singly Linked List itself
 
     addFront(value) {
         let newNode = new SLLNode(value); // Create the new Node with the given value
-        newNode.next = this.head;
-        this.head = newNode;
+        newNode.next = this.head; // Connect the new node to the list
+        this.head = newNode; // Now move the head of the list to the beginning, where the new node is located
         return this; // Allows for chaining
     }
 
@@ -28,9 +28,28 @@ class SLL { // Singly Linked List itself
         }
         return this; // For chaining
     }
+
+    addBack(value) {
+        let newNode = new SLLNode(value); // Create the new node
+        let curNode = this.head;
+        // Edge case: list is empty
+        if (this.head === null) {
+            this.head = newNode;
+            return this;
+        }
+        // We need to get to the last node in the list
+        while (curNode.next !== null) {
+            curNode = curNode.next;
+        }
+        // Attach the new node to the end
+        curNode.next = newNode;
+        return this; // Allow for chaining
+    }
 }
 
 let mySLL = new SLL();
-mySLL.addFront(10).addFront(5).addFront(20);
-mySLL.printValues();
+mySLL.addBack(15).addFront(20).addBack(30).printValues();
+// mySLL.addFront(10).addFront(5).addFront(20);
+// // mySLL.printValues();
+// mySLL.addBack(30).addBack(28).printValues();
 // console.log(mySLL);
