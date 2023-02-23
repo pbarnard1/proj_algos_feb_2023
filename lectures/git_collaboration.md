@@ -76,6 +76,8 @@ git merge name_to_merge_from
 ```
 This will bring in the code from the branch you're merging from, which likely is the development branch.
 
+From here, it's `git add`, `git commit`, `git push origin name_of_your_branch`, make a pull request, etc.  Remember to pull constantly and merge into your branch as needed!
+
 To switch between branches, do:
 ```
 git checkout branch_to_go_to
